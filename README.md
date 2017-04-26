@@ -22,16 +22,16 @@ Server
 Debian / Ubuntu:
 
     apt-get install python-pip
-    pip install shadowsocks
+    pip install git+https://github.com/shadowsocks/shadowsocks.git@master
 
 CentOS:
 
     yum install python-setuptools && easy_install pip
-    pip install shadowsocks
+    pip install git+https://github.com/shadowsocks/shadowsocks.git@master
 
 Windows:
 
-See [Install Server on Windows]
+See [Install Shadowsocks Server on Windows](https://github.com/shadowsocks/shadowsocks/wiki/Install-Shadowsocks-Server-on-Windows).
 
 ### Usage
 
@@ -52,10 +52,19 @@ To check the log:
 Check all the options via `-h`. You can also use a [Configuration] file
 instead.
 
+### Usage with Config File
+
+[Create configeration file and run](https://github.com/shadowsocks/shadowsocks/wiki/Configuration-via-Config-File)
+
+To start:
+
+    ssserver -c /etc/shadowsocks.json
+
+
 Documentation
 -------------
 
-You can find all the documentation in the [Wiki].
+You can find all the documentation in the [Wiki](https://github.com/shadowsocks/shadowsocks/wiki).
 
 License
 -------
